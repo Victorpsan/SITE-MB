@@ -1,0 +1,164 @@
+/* short hand font:
+        - font-style font-weight font-size font-family;
+
+    short hand boder:
+        - tamanho estilo cor;
+    
+    Comando para montar variáveis no CSS:
+        :root {
+            --nome: 
+        } 
+        Para declarar escreve-se 'var'
+*/
+@charset "UTF-8";
+@font-face {
+    font-family: 'banditos';
+    src: url('fontes/IFC\ LOS\ BANDITOS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'milonga';
+    src: url(fontes/Milonga-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Tipos de format():
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Aple Advanced Typography)
+        - svg
+
+    Em HTML é id = em CSS é #;
+    Em HTML é class = em CSS é .;
+    É possível usar duas classes e id + classe. Id se sobrepõe.
+*/
+
+body {
+    font: normal 14pt arial;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    height: 50px;
+    display:flex;
+    padding: 1% 0 1% 1%;
+    
+}
+header > img {
+    margin-right: auto;
+}
+nav {
+   display: inline-flex;
+   margin-right: 1%;
+  
+}
+
+nav > a {
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+
+nav > a > img {
+    border-radius: 3px;
+    opacity: 70%;
+}
+nav > a > img:hover {
+    box-shadow: -1px .5px  rgba(0, 0, 0, 0.277);
+    opacity: 100%;
+}
+
+img#insta:hover {  
+    border-radius: 6px;
+}
+
+li {
+    width: 120px;
+    margin: 5px; 
+}
+
+
+div#logo {
+    background-color: black;
+    
+}
+
+.trans > img {
+    width: 100%;
+}
+
+div#flor {
+    background-color: #fff451;
+    margin-top: -5px;
+}
+
+div#descriçao {
+    background-color: black;
+    padding: 1px;
+    color: #fff;
+    width: fit-content;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5px;
+   
+}
+div#descriçao > h1 {
+    font-size: 1.5em;
+    font-weight: lighter;
+} 
+div#descriçao > p {
+    width: 40%;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: lighter;
+}
+
+div#info {
+    display: flex;
+    font-size: 1.2em;    
+}
+
+div#info > p {
+    margin: 30px;
+    text-decoration: none;
+}
+
+
+div#prece {
+    width: 43%;
+    margin: auto;
+    background-color: #fff;
+    margin-top: -10px;
+    margin-bottom: 3em;
+}
+
+div#prece > p {
+    line-height: 1.7em;
+    font-family: milonga;
+    font-size: 1.3em;
+}
+
+footer {
+    height: 30px;
+    display: flex;
+    font-size: small;
+    align-items: center;
+    background-color: rgba(255, 255, 0, 0.114);
+    
+}
+
+footer > p {
+    margin: auto
+}

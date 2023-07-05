@@ -58,6 +58,30 @@
         <div id="contato">
             <h1>CONTATO</h1>
             <h2>mergulhobelga@gmail.com</h2>
+            <p>Faça uma declaração para nossas Flores!</p>
+         <form action="" method="post" autocomplete="on">
+                    <p>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="nome" minlength="3" maxlength="35" placeholder=" Nome (obrigatório)" autocomplete="name" required/>
+                    
+                        <label for="seuemail"></label>
+                        <input type="email" id="seuemail" name="seuemail" maxlength="35" placeholder=" Email (obrigatório)" autocomplete="email" required/>
+                        
+                        <label for="telefone"></label>
+                        <input type="tel" id="telefone" name="telefone" minlength="11" maxlength="13" placeholder=" Telefone" autocomplete="tel" required/>
+                    </p>
+                    
+                    <p>
+                        <label for="mensagem"></label>
+                        <textarea cols=60 id= "mensagem" rows="10" name="mensagem" maxlength="500" wrap="hard" placeholder="Mensagem..."></textarea>
+                    </p>
+                    
+                    <div>
+                        <button id="env" type="submit">ENVIAR</button>
+                        <button id="limp" type="reset">LIMPAR</button>
+                    </div>
+                    
+                </form>
         </div>
     </main>
     <footer>

@@ -151,6 +151,42 @@ div#prece > p {
     font-family: milonga;
 }
 
+form {
+    width: 80%;
+    margin: auto;
+}
+form p {
+    margin: auto;
+    width: 80%;
+    
+    
+    
+}
+form input {
+    width: 30%;
+    border-radius: 5px;
+    border-style:none;
+    background-color: #00000016;
+    padding: 5px;
+    
+}
+fieldset {
+    border: none;
+}
+textarea {
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #00000016;
+    border: none;
+}
+#but {
+    display: block;
+    text-align: right;
+    width: 85%;
+    margin: auto;
+}
+
 footer {
     height: 30px;
     display: flex;
